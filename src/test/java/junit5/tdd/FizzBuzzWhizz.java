@@ -1,10 +1,11 @@
 package junit5.tdd;
 
 import org.junit.jupiter.api.Test;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+
+
 public class FizzBuzzWhizz {
 
     @Test
@@ -45,6 +46,7 @@ public class FizzBuzzWhizz {
         // then
         assertThat(actul, is("Buzz"));
     }
+
     @Test
     void should_return_7_when_play_fizz_buzz_whizz_given_7() {
         // given
@@ -83,6 +85,7 @@ public class FizzBuzzWhizz {
         // then
         assertThat(actul, is("Buzz"));
     }
+
     @Test
     void should_return_35_when_play_fizz_buzz_whizz_given_35() {
         // given

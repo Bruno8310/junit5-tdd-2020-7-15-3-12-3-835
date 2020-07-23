@@ -26,4 +26,11 @@ public class FizzBuzzWhizz {
         }
         return String.valueOf(number);
     }
+
+    public void print() {
+        for (int i = 1; i <= 120; i++) {
+            System.out.println(playFizzBuzzWhizz(i));
+        }
+    }
+
 }
