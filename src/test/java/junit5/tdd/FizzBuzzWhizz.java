@@ -20,4 +20,17 @@ public class FizzBuzzWhizz {
         assertThat(actul, is("1"));
     }
 
+    @Test
+    void should_return_3_when_play_fizz_buzz_whizz_given_3() {
+        // given
+        int number = 3;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        // when
+        String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
+
+        // then
+        assertThat(actul, is("Buzz"));
+    }
+
 }
