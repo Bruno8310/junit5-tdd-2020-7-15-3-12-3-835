@@ -83,6 +83,18 @@ public class FizzBuzzWhizz {
         // then
         assertThat(actul, is("Buzz"));
     }
+    @Test
+    void should_return_35_when_play_fizz_buzz_whizz_given_35() {
+        // given
+        int number = 35;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        // when
+        String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
+
+        // then
+        assertThat(actul, is("Buzz"));
+    }
 
 
 
