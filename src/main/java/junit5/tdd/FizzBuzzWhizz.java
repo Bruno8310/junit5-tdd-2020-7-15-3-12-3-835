@@ -3,34 +3,20 @@ package junit5.tdd;
 public class FizzBuzzWhizz {
 
     public String playFizzBuzzWhizz(int number) {
-        if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
-            return "FizzBuzzWhizz";
-        }
-        if (number % 5 == 0 && number % 7 == 0) {
-            return "BuzzWhizz";
-        }
-        if (number % 3 == 0 && number % 7 == 0) {
-            return "FizzWhizz";
-        }
-        if (number % 3 == 0 && number % 5 == 0) {
-            return "FizzBuzz";
-        }
-        if (number % 7 == 0) {
-            return "Whizz";
+        String result = "";
+        if (number % 3 == 0) {
+            result += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            result += "Buzz";
         }
-        if (number % 3 == 0) {
-            return "Fizz";
+        if (number % 7 == 0) {
+            result += "Whizz";
         }
-        return String.valueOf(number);
-    }
-
-    public void print() {
-        for (int i = 1; i <= 120; i++) {
-            System.out.println(playFizzBuzzWhizz(i));
+        if (result.equals("")) {
+            result = String.valueOf(number);
         }
+        return result;
     }
 
 }

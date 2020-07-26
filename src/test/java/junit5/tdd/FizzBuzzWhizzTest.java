@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-public class FizzBuzzWhizz {
+public class FizzBuzzWhizzTest {
 
     @Test
     void should_return_1_when_play_fizz_buzz_whizz_given_1() {
@@ -26,12 +26,11 @@ public class FizzBuzzWhizz {
         // given
         int number = 3;
         FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
-
         // when
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("Fizz"));
     }
 
     @Test
@@ -57,7 +56,7 @@ public class FizzBuzzWhizz {
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("Whizz"));
     }
 
     @Test
@@ -70,7 +69,7 @@ public class FizzBuzzWhizz {
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("FizzBuzz"));
     }
 
     @Test
@@ -83,7 +82,7 @@ public class FizzBuzzWhizz {
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("FizzWhizz"));
     }
 
     @Test
@@ -96,7 +95,7 @@ public class FizzBuzzWhizz {
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("BuzzWhizz"));
     }
 
     @Test
@@ -109,7 +108,7 @@ public class FizzBuzzWhizz {
         String actul = fizzBuzzWhizz.playFizzBuzzWhizz(number);
 
         // then
-        assertThat(actul, is("Buzz"));
+        assertThat(actul, is("FizzBuzzWhizz"));
     }
 
 }
